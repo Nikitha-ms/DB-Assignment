@@ -1,0 +1,4 @@
+1.The relationship between "Product" table  and "Product_Category" table  is a many-to-one relationship. This means t many products can belong to one category. In  "Product" table -> category_id attribute acts as a foreign key that references  id (primary key) of "Product_Category" table. 
+This relationship allows each product to be associated with a single category.
+
+2.You can use foreign key constraints to ensure referential integrity and make sure that every product in the "Product" table has a proper category assigned to it. This constraint makes sure that the value given in the "Product" table's category_id field must also be present in the "Product_Category" table's id column. Each product will always have a valid category allocated to it since the database cannot allow the addition or modification of a product with an incorrect category ID by defining a foreign key constraint.
